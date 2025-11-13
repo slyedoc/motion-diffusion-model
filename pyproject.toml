@@ -1,0 +1,63 @@
+[project]
+name = "motion-diffusion-model"
+version = "0.1.0"
+description = "Human Motion Diffusion Model - PyTorch implementation"
+readme = "README.md"
+authors = [
+    { name = "Patrick Towles", email = "james.towles@gmail.com" }
+]
+requires-python = ">=3.11"
+
+dependencies = [
+    "torch==2.9.1",
+    "torchvision==0.24.1",
+    "torchaudio==2.9.1",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "h5py",
+    "spacy>=3.3",
+    "trimesh",
+    "smplx",
+    "chumpy",
+    "scikit-learn",
+    "tqdm",
+    "wandb",
+    "gdown",
+    "pydantic",
+    "beautifulsoup4",
+    "lxml",
+    "ftfy",
+    "regex",
+    "clip",
+    "moviepy<2",
+    "transformers>=4.57.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+    "black",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
+torchaudio = { index = "pytorch-cu130" }
+clip = { git = "https://github.com/openai/CLIP.git" }
+chumpy = { path = "/home/slyedoc/code/f/chumpy", editable = true }
+
+[tool.setuptools]
+packages = []
+py-modules = []
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
