@@ -4,15 +4,7 @@ version = "0.1.0"
 description = "Human Motion Diffusion Model - PyTorch implementation"
 readme = "README.md"
 authors = [
-    { name = "Guy Tevet" },
-    { name = "Sigal Raab" },
-    { name = "Brian Gordon" },
-    { name = "Yoni Shafir" },
-    { name = "Daniel Cohen-or" },
-    { name = "Amit Haim Bermano" }
-]
-maintainers = [
-    { name = "Patrick Towles", email = "james.towles@gmail.com" }
+    { name = "Guy Tevet" }
 ]
 requires-python = ">=3.11"
 
