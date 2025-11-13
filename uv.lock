@@ -198,21 +198,12 @@ wheels = [
 [[package]]
 name = "chumpy"
 version = "0.70"
-source = { editable = "../../../../home/slyedoc/code/f/chumpy" }
+source = { git = "https://github.com/slyedoc/chumpy.git?branch=blackwell#bf37525020c10d432e8441aa68a7786eaa9e6bfa" }
 dependencies = [
     { name = "numpy" },
     { name = "scipy" },
     { name = "six" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "numpy", specifier = ">=1.8.1" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "scipy", specifier = ">=0.13.0" },
-    { name = "six", specifier = ">=1.11.0" },
-]
-provides-extras = ["dev"]
 
 [[package]]
 name = "click"
@@ -1071,7 +1062,7 @@ dev = [
 requires-dist = [
     { name = "beautifulsoup4" },
     { name = "black", marker = "extra == 'dev'" },
-    { name = "chumpy", editable = "../../../../home/slyedoc/code/f/chumpy" },
+    { name = "chumpy", git = "https://github.com/slyedoc/chumpy.git?branch=blackwell" },
     { name = "clip", git = "https://github.com/openai/CLIP.git" },
     { name = "flake8", marker = "extra == 'dev'" },
     { name = "ftfy" },

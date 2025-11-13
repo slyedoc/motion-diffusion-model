@@ -51,7 +51,7 @@ torch = { index = "pytorch-cu130" }
 torchvision = { index = "pytorch-cu130" }
 torchaudio = { index = "pytorch-cu130" }
 clip = { git = "https://github.com/openai/CLIP.git" }
-chumpy = { path = "/home/slyedoc/code/f/chumpy", editable = true }
+chumpy = { git = "https://github.com/slyedoc/chumpy.git", branch = "blackwell" }
 
 [tool.setuptools]
 packages = []
